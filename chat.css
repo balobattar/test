@@ -1,0 +1,216 @@
+@import url(css/line-awesome.min.css);
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0370cf;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B3AFB3;
+}
+
+::-webkit-scrollbar-track {
+  background: #F0F0F0;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+          box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:not(i) {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+.chatBox {
+  margin: 100px;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0370cf;
+  background: -webkit-gradient(linear, left top, right top, from(#0370cf), color-stop(35%, #0370cf), to(#0250a0));
+  background: linear-gradient(90deg, #0370cf 0%, #0370cf 35%, #0250a0 100%);
+}
+
+.chatBox .header {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chatBox .header i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.chatBox .header .img {
+  margin: 0 20px;
+  width: 50px;
+  height: 50px;
+  background: url(person.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.chatBox .header h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+.chatBox .body {
+  background: #fff;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-height: 500px;
+  min-height: 500px;
+  overflow-y: auto;
+}
+
+.chatBox .body .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.chatBox .body .text .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(person.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.chatBox .body .text .message {
+  max-width: calc(80% - 50px);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.chatBox .body .text .message span {
+  font-size: 0.6rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.chatBox .body .left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.chatBox .body .left .message {
+  background-color: #EAEBED;
+  color: #000;
+  border-top-left-radius: 5px;
+}
+
+.chatBox .body .left .avatar {
+  margin-right: 10px;
+}
+
+.chatBox .body .right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.chatBox .body .right .message {
+  background-color: #006BDD;
+  border-top-right-radius: 5px;
+  color: #fff;
+}
+
+.chatBox .body .right .message span {
+  text-align: right;
+}
+
+.chatBox .body .right .avatar {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-left: 10px;
+}
+
+.chatBox .input {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.chatBox .input textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 80%;
+  padding: 20px 10px 20px 20px;
+  font-size: 1.2rem;
+}
+
+.chatBox .input textarea::-webkit-input-placeholder {
+  font-size: 1.2rem;
+}
+
+.chatBox .input textarea:-ms-input-placeholder {
+  font-size: 1.2rem;
+}
+
+.chatBox .input textarea::-ms-input-placeholder {
+  font-size: 1.2rem;
+}
+
+.chatBox .input textarea::placeholder {
+  font-size: 1.2rem;
+}
+
+.chatBox .input a {
+  width: 10%;
+  font-size: 2rem;
+}
+
+.chatBox .input a.tg {
+  color: #006BDD;
+}
+/*# sourceMappingURL=chat.css.map */

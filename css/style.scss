@@ -1,0 +1,81 @@
+$col : rgb(0, 163, 141);
+@import url(line-awesome.min.css);
+*{
+    margin: 0;
+    padding:0;
+    &:not(i){
+        font-family: sans-serif;
+    }
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 209, 138);
+}
+.calBox{
+    width:25%;
+    background-color: #fff;
+    padding:20px;
+    .add{
+        display: block;
+        background-color: $col;
+        color:#fff;
+        padding:10px 0;
+        width:25%;
+        margin:0 auto;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .date{
+        margin:10px 0;
+        background-color: $col;
+        color:#fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:40px 20px;
+       .now{
+           font-size: 1.2rem;
+       }
+       .change{
+           color:#555;
+           cursor: pointer;
+           transition: 0.3s;
+           &:hover{
+               color: rgb(238, 238, 238);
+           }
+       }
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: calc(100% / 7);
+            cursor: pointer;
+            transition: all 0.3s;
+            span{
+                display: block;
+                padding:10px;
+                text-align: center;
+            }
+            &:nth-child(-n+7){
+                >span{
+                    font-weight: bold;
+                }
+            }
+            &:hover{
+                background-color: $col;
+                color:#fff;
+            }
+        }
+    }
+}
